@@ -1,0 +1,133 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 110px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  
+  .container img {
+    position: relative;
+    left: -7px;
+    top: 2px;
+    width: 80px;
+    height: 65px 
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 47px;
+  }
+  
+  .nav-item {
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 35px; 
+    color: rgb(33, 24, 54);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    transition: color 0.3s;
+    border: none;
+   
+  }
+  
+  .nav-item:hover {
+    color: #df1616; 
+    text-decoration: none;
+  }
+  
+  .rectangle {
+    position: absolute;
+    top: 30px;
+    left: 167px;
+    width: 197px;
+    height: 58px;
+    border: 7px solid rgb(33, 24, 54);
+    display: flex;
+    transition: color 0.3s;
+  }
+  
+  .rectangle h1 {
+    position: relative;
+    left: 24px;
+    top: -8px;
+    color: rgba(5, 104, 28, 0.714);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+  }
+
+  /* --------------------- */
+  .image img{
+    position: relative;
+    width: 100%;
+    height: 470px;
+    display: block;
+    overflow: hidden;
+  }
+/* -------------------------------------- */
+  .client-card {
+   
+    margin: 9px;
+  }
+  .client-card.element {
+   
+    border: none;
+  }
+
+  .client-card .card-img-top {
+    position: relative;
+    width: 110px;
+    height: 90px;
+    object-fit: cover;  
+   text-align: center;
+    border: none;
+
+  }
+  .client-card .card-body {
+    text-align: center;
+  }
+  .card-title{
+    position: relative;
+    top: 2px;
+    text-align: center;
+  }
+  .row{
+    position: relative;
+    width: 800px;
+    left: 290px;
+  }
+
+  footer {
+    position: relative;
+    background-color:rgb(42 17 100);
+    color: white;
+    padding: 20px;
+  
+   
+  }
+  
+  .footer-content {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    font-size: 17px;
+  }
+    
+  .icon{
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .icon:hover {
+    color: rgb(246, 238, 238);
+  }

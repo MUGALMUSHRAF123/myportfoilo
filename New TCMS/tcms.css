@@ -1,0 +1,803 @@
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 47, 47, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+
+.loading-bar {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  background: transparent;
+  border: px solid #3c3c3c;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 111px;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #199241;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow: 0 0 20px #fff000;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.loading-bar:before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid transparent;
+  border-top: 7px solid #27b652;
+  border-right: 7px solid #251889;
+  border-radius: 50%;
+  animation: animateC 2s linear infinite;
+}
+
+@keyframes animateC {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(45deg);
+  }
+
+  100% {
+    transform: rotate(405deg);
+  }
+}
+
+
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 110px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.container img {
+  position: relative;
+  left: -61px;
+  top: -2px ;
+  width: 80px;
+  height: 65px 
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 80px;
+  top: 8px;
+}
+
+.nav-item {
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 36px; 
+  color: rgb(47, 11, 131);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  transition: color 0.3s;
+ 
+}
+ /* Underline Effect */
+ a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+  color: #df1616;
+}
+
+
+
+
+.rectangle {
+  position: absolute;
+  top: 24px;
+  left: 144px;
+  width: 197px;
+  height: 58px;
+  border: 7px solid rgb(33, 24, 54);
+  display: flex;
+  transition: color 0.3s;
+}
+
+.rectangle h1 {
+  position: relative;
+  left: 24px;
+  top: -26px;
+  color: rgba(5, 104, 28, 0.714);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+}
+
+ 
+  .video{
+    position: relative;
+    width: 100%;
+    left: -16px;
+    top: -15px;
+      overflow: hidden;
+  }
+    
+  
+  .twin{
+    position: relative;
+    top: -291px;
+    background-color: rgba(255, 255, 255, 0.24);
+    width: 537px;
+    height: 230px;
+    left: 360px;
+    animation-name: example;
+  animation-duration: 6s;
+  transition :3s;
+}
+@keyframes example {
+  0%   {background-color:rgb(27, 125, 190); left:0px; top:-291px;}
+  25%  { left:360px; top:-289px;}
+ 
+}
+
+  
+  .twin h1{
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+   font-weight: 900;
+   font-size: 30px;
+  text-align: center;
+  color: rgb(33, 24, 54);
+
+  }
+  .twin p{
+    position: relative;
+    width: 355px;
+    font-size: 12px;
+    font-weight: -440;
+    left: 127px;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    top: 19px;
+}
+  
+  .twin img{
+    position: relative;
+    width: 106px;
+    height: 93px;
+    top: -29px;
+    left: -343px;
+
+  }
+  .blue{
+    position: relative;
+    background-color: rgba(31, 19, 58, 0.789);
+    width: 100%;
+    height: 13px;
+    left: 0%;
+    overflow: hidden;
+    top: -296px 
+  }
+  
+ /* <!-- Our Services -----------------------------> */
+ .our{
+  position: relative;
+  display: block;
+  background-color:  rgb(42 17 100);
+  width: 100%;
+  overflow: hidden;
+  height: 368px;
+  top: 1px;
+ }
+ .our h1{
+  position: relative;
+    color: white;
+    top: 26px;
+    left: 202px;
+    font-size: 50px;
+ }
+ .our p{
+position: relative;
+color: white;
+top: 40px;
+left: 202px;
+font-size: 15px;
+width: 400px;
+ }
+
+ #scrollTopBtn {
+  display: none; 
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 17px;
+  right: 30px;
+  z-index: 99; 
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #15131d;
+  color: white;
+  cursor: pointer;
+ text-align: center;
+  border-radius: 50%;
+}
+
+#scrollTopBtn:hover {
+  background-color: #0c1b556f;
+}
+-------------------
+
+.job-contracts {
+  position: relative;
+  display: list-item;
+  justify-content: center;
+
+}
+
+.job-contract-card1{
+  position: relative;
+    top: -158px;
+    left: 172px;
+    width: 870px;
+    height: 270px;
+    margin: 30px;
+    background-color:white; 
+    animation-name: card1;
+  animation-duration: 9s;
+  transition :8s;
+}
+@keyframes card1 {
+  0%   {background-color:rgb(231, 71, 13); left:0px; top:-158px;}
+  25%  { left:172px; top:-158px;}
+ 
+}
+
+
+.job-contract-card1 h1 {
+  position: relative;
+  display: inline-block;
+  left: 513px;
+  top: 41px;
+  font-size: 28px;
+  color: rgba(35, 17, 76, 0.789);
+  font-family: Arial, Helvetica, sans-serif;
+overflow: hidden;
+  
+}
+
+.job-contract-card1 p {
+  position: relative;
+  font-size: 16px;
+  color: #333;
+  left: 394px;
+    width: 467px;
+    top: 55px;
+}
+
+.job-contract-card1 h5{
+  position: relative;
+  display: inline-block;
+  left: 630px;
+  top: -25px;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.job-contract-card1 img {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 300px;
+  height: 200px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  top: -125px;
+  left: -60px;
+}
+
+
+/* card2 */
+.job-contract-card2{
+  position: relative;
+    top: -158px;
+    left: 172px;
+    width: 870px;
+    height: 270px;
+    margin: 30px;
+    background-color:white; 
+}
+
+.job-contract-card2 h1 {
+  position: relative;
+  display: inline-block;
+  left: 185px;
+    top: 24px;
+  font-size: 28px;
+  color: rgba(35, 17, 76, 0.789);
+  font-family: Arial, Helvetica, sans-serif;
+overflow: hidden;
+  
+}
+
+.job-contract-card2 p {
+  position: relative;
+  font-size: 16px;
+  color: #333;
+  left: 22px;
+    width: 467px;
+    top: 22px;
+}
+
+.job-contract-card2 h5{
+  position: relative;
+  display: inline-block;
+  left: 180px;
+  top: -58px;
+  color: #df1616;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.job-contract-card2 img {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 300px;
+  height: 200px;
+  border: 7px solid white;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  top: -154px;
+  left: 458px 
+}
+ /* card3 */
+ .job-contract-card3{
+  position: relative;
+    top: -158px;
+    left: 172px;
+    width: 870px;
+    height: 270px;
+    margin: 30px;
+    background-color:white; 
+    animation-name: card3;
+    animation-duration: 9s;
+    transition :8s;
+  }
+  @keyframes card3 {
+    0%   {background-color:rgb(231, 71, 13); left:0px; top:-158px;}
+    25%  { left:172px; top:-158px;}
+   
+  } 
+
+
+.job-contract-card3 h1 {
+  position: relative;
+  display: inline-block;
+  left: 513px;
+  top: 41px;
+  font-size: 28px;
+  color: rgba(35, 17, 76, 0.789);
+  font-family: Arial, Helvetica, sans-serif;
+overflow: hidden;
+  
+}
+
+.job-contract-card3 p {
+  position: relative;
+  font-size: 16px;
+  color: #333;
+  left: 394px;
+    width: 467px;
+    top: 55px;
+}
+
+.job-contract-card3 h5{
+  position: relative;
+  display: inline-block;
+  left: 630px;
+  top: -25px;
+  color: #df1616;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.job-contract-card3 img {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 300px;
+  height: 200px;
+  border: 7px solid white;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  top: -125px;
+  left: -60px
+}
+
+/* cards4 */
+
+.job-contract-card4{
+  position: relative;
+    top:-158px;
+    left: 172px;
+    width: 870px;
+    height: 270px;
+    margin: 30px;
+    background-color:white; 
+}
+
+.job-contract-card4 h1 {
+  position: relative;
+  display: inline-block;
+  left: 185px;
+    top: 24px ;
+  font-size: 28px;
+  color: rgba(35, 17, 76, 0.789);
+  font-family: Arial, Helvetica, sans-serif;
+overflow: hidden;
+  
+}
+
+.job-contract-card4 p {
+  position: relative;
+  font-size: 16px;
+  color: #333;
+  left: 22px;
+    width: 467px;
+    top: 41px;
+}
+
+.job-contract-card4 h5{
+  position: relative;
+  display: inline-block;
+  left: 180px;
+  top: -28px;
+  color: #df1616;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.job-contract-card4 img {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 300px;
+  height: 200px;
+  border: 7px solid white;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  top: -123px;
+  left: 458px 
+}
+
+
+/* card5 */
+.job-contract-card5{
+  position: relative;
+    top: -158px;
+    left: 172px;
+    width: 870px;
+    height: 270px;
+    margin: 30px;
+    background-color:white; 
+    animation-name: card5;
+    animation-duration: 9s;
+    transition :8s;
+  }
+  @keyframes card5 {
+    0%   {background-color:rgb(231, 71, 13); left:0px; top:-158px;}
+    25%  { left:172px; top:-158px;}
+   
+  }
+
+.job-contract-card5 h1 {
+  position: relative;
+  display: inline-block;
+  left: 513px;
+  top: 25px;
+  font-size: 28px;
+  color: rgba(35, 17, 76, 0.789);
+  font-family: Arial, Helvetica, sans-serif;
+overflow: hidden;
+  
+}
+
+.job-contract-card5 p {
+  position: relative;
+  font-size: 16px;
+  color: #333;
+  left: 394px;
+    width: 467px;
+    top: 23px;
+}
+
+.job-contract-card5 h5{
+  position: relative;
+  display: inline-block;
+  left: 630px;
+  top: -68px;
+  color: #df1616;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.job-contract-card5 img {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 300px;
+  height: 200px;
+  border: 7px solid white;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  top: -173px;
+  left: -60px;
+}
+ /* card6 */
+ .job-contract-card6{
+  position: relative;
+    top: -158px;
+    left: 172px;
+    width: 870px;
+    height: 270px;
+    margin: 30px;
+    background-color:white; 
+ }
+
+.job-contract-card6 h1 {
+  position: relative;
+  display: inline-block;
+  left: 185px;
+    top: 24px;
+  font-size: 28px;
+  color: rgba(35, 17, 76, 0.789);
+  font-family: Arial, Helvetica, sans-serif;
+overflow: hidden;
+}
+
+.job-contract-card6 p {
+  position: relative;
+  font-size: 16px;
+  color: #333;
+  left: 22px;
+  width: 467px;
+  top: 22px;
+}
+
+.job-contract-card6 h5{
+  position: relative;
+  display: inline-block;
+  left: 180px;
+  top: -48px;
+  color: #df1616;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.job-contract-card6 img {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 300px;
+  height: 200px;
+  border: 7px solid white;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  top: -169px;
+  left: 458px 
+}
+/* card7 */
+.job-contract-card7{
+  position: relative;
+    top: -158px;
+    left: 172px;
+    width: 870px;
+    height: 250px;
+    margin: 30px;
+    background-color:white; 
+    animation-name: card7;
+    animation-duration: 9s;
+    transition :8s;
+  }
+  @keyframes card7 {
+    0%   {background-color:rgb(231, 71, 13); left:0px; top:-158px;}
+    25%  { left:172px; top:-158px;}
+   
+  }
+
+.job-contract-card7 h1 {
+  position: relative;
+  display: inline-block;
+  left: 513px;
+  top: 16px;
+  font-size: 28px;
+  color: rgba(35, 17, 76, 0.789);
+  font-family: Arial, Helvetica, sans-serif;
+overflow: hidden;
+  
+}
+
+.job-contract-card7 p {
+  position: relative;
+  font-size: 16px;
+  color: #333;
+  left: 394px;
+    width: 467px;
+    top: 14px;
+}
+
+.job-contract-card7 h5{
+  position: relative;
+  display: inline-block;
+  left: 630px;
+  top: -85px;
+  color: #df1616;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.job-contract-card7 img {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 300px;
+  height: 200px;
+  border: 7px solid white;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  top: -183px;
+  left: -60px;
+}
+/* carousel slide */
+
+
+
+.carousel-item .carousel-caption {
+  position: absolute;
+  font-size: 19px;
+  color: white; /* Text color */
+}
+
+
+/* 
+<!-- -----------------footer--------------------------- --> */
+
+footer {
+  position: relative;
+  background-color:rgb(42 17 100);
+  color: white;
+  padding: 20px;
+ top: -1px;
+display: flex;
+ 
+}
+
+.footer-content {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 17px;
+}
+  
+
+
+@media only screen and (max-width: 576px) {
+  .container {
+      position: relative;
+     width: 576px;
+    }
+    
+    .container img {
+      position: relative;
+      width: 576px;
+    }
+    
+    .navbar {
+      position: relative;
+     width: 576px;
+    }
+    
+    .nav-item {
+      position: relative;
+     width: 576px;
+     
+    }
+    
+    .nav-item:hover {
+      color: #df1616; /* Change the color on hover to red as an example */
+      text-decoration: none;
+    }
+    
+    .nav-item.active{
+      color: #df1616;
+    }
+    
+    .rectangle {
+      position: relative;
+     width: 576px;
+    }
+    
+    .rectangle h1 {
+      position: relative;
+     width: 576px;
+    }
+    
+     
+      .video{
+          position: relative;
+          width: 576px;
+      }
+        
+      
+      .twin{
+          position: relative;
+          width: 576px;
+    }
+    @keyframes example {
+      0%   {background-color:rgb(27, 125, 190); left:0px; top:-291px;}
+      25%  { left:360px; top:-289px;}
+     
+    }
+    
+      
+      .twin h1{
+          position: relative;
+          width: 576px;
+      }
+      .twin p{
+          position: relative;
+          width: 576px;
+    }
+      
+      .twin img{
+          position: relative;
+          width: 576px;
+    
+      }
+      .blue{
+          position: relative;
+          width: 576px;
+      }
+ 
+}
+
+.contact{
+  position: relative;
+  text-align: center;
+  top: 17px;
+}
