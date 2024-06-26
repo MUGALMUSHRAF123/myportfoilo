@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Task4.css">
+</head>
+<body>
+    
+    <h3 style="margin-top: 200px;"><center >Task 4</center></h3>
+    
+    <section class="section_form">
+        <form id="consultation-form" class="feed-form" action="#">
+            <input required placeholder="Name" type="text">
+            <input name="phone" required placeholder="Phone number">
+            <input name="email" required placeholder="E-mail" type="email">
+            <button class="button_submit">ORDER</button>
+        </form>
+    </section>
+    
+    <section>
+        <div class="container">
+            <h1>Job Application Form</h1>
+            <form id="job-application-form">
+                <div class="form-group">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required placeholder="Enter the Full full-name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter the E-mail">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Enter the Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="resume">Resume:</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+                </div>
+                <div class="form-group">
+                    <label for="cover-letter">Cover Letter:</label>
+                    <textarea id="cover-letter" name="cover-letter" rows="6" required placeholder="Enter the required text....."></textarea>
+                </div>
+                <div class="form-group">
+                    
+                    <label for="position" >Position:</label>
+                    <select id="position" name="position" required>
+                        <option value="">Select Position</option>
+                        <option value="FontEnd Developer">FontEnd Developer</option>
+                        <option value="BackEnd Developer">BackEnd Developer</option>
+                        <option value="Testing">Testing</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="location">Preferred Location:</label>
+                    <select id="location" name="location" required>
+                        <option value="">Select Location</option>
+                        <option value="new-york">New York</option>
+                        <option value="san-francisco">San Francisco</option>
+                        <option value="los-angeles">Los Angeles</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit Application</button>
+                </div>
+            </form>
+        </div>
+    </section>
+<
+</body>
+</html>

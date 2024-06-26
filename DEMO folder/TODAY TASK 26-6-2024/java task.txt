@@ -1,0 +1,47 @@
+public class ReverseString {
+    public static void main(String[] args) {
+        String str = "Hello, world!";
+        String reversed = reverseString(str);
+        System.out.println("Original string: " + str);
+        System.out.println("Reversed string: " + reversed);
+    }
+
+    public static String reverseString(String str) {
+        char[] chars = str.toCharArray();
+        int left = 0;
+        int right = chars.length - 1;
+        while (left < right) {
+           
+            char temp = chars[left];
+            chars[left++] = chars[right];
+            chars[right--] = temp;
+        }
+        return new String(chars);
+    }
+}
+
+
+
+
+import java.util.Arrays;
+
+public class AnagramCheck {
+    public static void main(String[] args) {
+        String str1 = "listen";
+        String str2 = "silent";
+        
+        boolean isAnagram = isAnagram(str1, str2);
+        
+        System.out.println(str1 + " and " + str2 + " are anagrams: " + isAnagram);
+    }
+    
+    public static boolean isAnagram(String str1, String str2) {
+        char[] arr1 = str1.toCharArray();
+        char[] arr2 = str2.toCharArray();
+        
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
+        
+        return Arrays.equals(arr1, arr2);
+    }
+}
