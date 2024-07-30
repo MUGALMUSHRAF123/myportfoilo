@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a web page using overflow properties</title>
+ 
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.container {
+    margin: 20px auto;
+    width: 80%;
+    overflow: auto;
+}
+
+.box {
+    width: 45%;
+    height: 150px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #e3e3e3;
+    border: 1px solid #ccc;
+    float: left;
+    box-sizing: border-box;
+}
+
+.overflow-visible {
+    overflow: visible;
+    background-color: #ffd700;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+    background-color: #ff6347;
+    color: #fff;
+}
+
+.overflow-scroll {
+    overflow: scroll;
+    background-color: #4682b4;
+    color: #fff;
+}
+
+.overflow-auto {
+    overflow: auto;
+    background-color: #32cd32;
+    color: #fff;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Create a web page using overflow properties</h1>
+    </header>
+    <div class="container">
+        <div class="box overflow-visible">
+            <h2>Overflow: Visible</h2>
+            <p>This text overflows the container. The overflow property is set to visible, so the overflow content is visible outside the box. </p>
+        </div>
+        <div class="box overflow-hidden">
+            <h2>Overflow: Hidden</h2>
+            <p>This text overflows the container. The overflow property is set to hidden, so the overflow content is clipped and not visible outside the box.</p>
+        </div>
+        <div class="box overflow-scroll">
+            <h2>Overflow: Scroll</h2>
+            <p>This text overflows the container. The overflow property is set to scroll, so a scrollbar appears to allow scrolling the overflow content.</p>
+        </div>
+        <div class="box overflow-auto">
+            <h2>Overflow: Auto</h2>
+            <p>This text overflows the container. The overflow property is set to auto, so a scrollbar appears if necessary to allow scrolling the overflow content.</p>
+        </div>
+    </div>
+   
+</body>
+</html>

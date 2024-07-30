@@ -1,0 +1,95 @@
+.vertical-navbar {
+    width: 200px;
+    background-color: #333;
+    overflow-anchor: none; 
+    overflow-wrap: break-word; 
+    overflow-x: hidden; 
+    overflow-y: auto; 
+    position: relative; 
+}
+
+.vertical-navbar ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.vertical-navbar ul li {
+    padding: 13px;
+}
+
+.vertical-navbar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.vertical-navbar ul li:hover {
+    background-color: rgb(182, 174, 163); 
+}
+
+.horizontal-navbar {
+    top: 40px;
+    background-color: #ec2c2c;
+    overflow-anchor: none; 
+    overflow-wrap: break-word; 
+    overflow-x: hidden; 
+    overflow-y: auto; 
+    position: relative;
+   
+}
+
+.horizontal-navbar ul {
+    list-style-type: none; 
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.horizontal-navbar ul li {
+    padding: 13px 40px;
+    font-size: 17px;
+}
+
+.horizontal-navbar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.horizontal-navbar ul li:hover {
+    background-color: rgb(182, 174, 163);
+}
+#page1 {
+    position: relative;
+    top: 60px;
+    font-size: 24px;
+    background-color: rgb(73, 73, 66);
+    color: azure;
+    height: 300px;
+    padding: 20px; 
+    scroll-behavior: smooth;
+}
+
+#page1 a {
+    color: azure;
+    text-decoration: none;
+}
+
+#page2 {
+    position: relative;
+    top: 100px;
+    font-size: 24px;
+    background-color: rgb(165, 75, 126);
+    color: azure;
+    height: 300px;
+    padding: 20px; 
+    scroll-behavior: auto;
+}
+
+#page2 a {
+    color: azure;
+    text-decoration: none;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a website... It must  have navigation part </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="demo.css">
+    
+</head>
+<style>
+    
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap; 
+}
+
+.card section {
+    width: 23%; 
+    margin: 10px;
+    padding: 20px;
+    border: 10px solid #dcd6d6;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.card img {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: darken;
+}
+
+.image-section img{
+    position: relative;
+    width: 100px;
+    height: 130px;
+    margin-bottom: 7px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: darken;
+    border: 6px solid #dcd6d6;
+    text-align: center;
+    box-sizing: border-box;
+    
+}
+
+.text a{
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+.text h3{
+    text-align: center;
+}
+
+.text1 h3{
+    text-align: center;
+}
+.text1 a{
+    position: relative;
+    font-size: 12px;
+    text-decoration: none;
+    padding-left: 10px;
+    color: black;
+   
+}
+
+.text1 i{
+    position: relative;
+    font-size: 25px;
+   
+}
+
+.centre{
+    position: relative;
+    text-align: center;
+}
+
+</style>
+<body>
+      <center style="font-size: 20px;">Create a website... It must  have navigation part </center>
+     
+<div class="text">
+    <h3>Internal Link tag</h3>
+  <a href="#BOOTSCARP" >its redirect to bootscarp image card</a>
+</div>
+
+<div class="text" >
+    <h3>External Link tag</h3>
+    <a href="https://www.w3schools.com/" target="_blank">w3schools web page</a>
+</div>
+
+<div class="text1">
+    <h3> Email Link </h3>
+    <i class="fa-regular fa-envelope"><a href="mailto:someone@example.com" >Send Email</a></i>
+</div>
+
+<div class="text1">
+    <h3>Telephone Link</h3>
+    <i class="fa-solid fa-phone"><a href="tel:+1234567890">Call Us</a></i>
+</div>
+
+   
+<h2 >Implement images in four different sections in webpage</h2>
+
+     <h3 id="HTML">HTML</h3>
+     <div class="image-section">
+      <a href="https://www.w3schools.com/html/default.asp"> 
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3_NNARdCXN-v0WyLswBQKrRS9lOahzqBnYA&s" alt="First of image"></a>
+     </div>
+     <h3 id="CSS">CSS</h3>
+     <div class="image-section">
+     <a href="https://www.w3schools.com/css/default.asp" > 
+        <img src="photos/CSS.png" alt="Second of image "></a>
+     </div>
+     <h3 id="JAVASCPRIT">JAVASCPRIT</h3>
+     <div class="image-section">
+      <a href="https://www.w3schools.com/js/default.asp"> 
+        <img src="photos/java_scprit.png" alt="Third of image "></a>
+     </div>
+     <h3 id="BOOTSCARP">BOOTSCARP</h3>
+     <div class="image-section">
+      <a href="https://www.w3schools.com/bootstrap5/index.php">
+        <img src="photos/bootscarp.png" alt="Fourth of image "> </a>
+     </div>
+
+
+    <section>
+    <div class="card">
+        <section>
+            <h2>HTML</h2>
+            <img src="photos/HTML.png" alt="First of image 1">
+        </section>
+        <section>
+            <h2>CSS</h2>
+            <img src="photos/CSS.png" alt="Second of image 2">
+        </section>
+        <section>
+            <h2>JAVASCPRIT</h2>
+            <img src="photos/java_scprit.png" alt="Third of image 3">
+        </section>
+        <section>
+            <h2>BOOTSCARP</h2>
+            <img src="photos/bootscarp.png" alt="Fourth of image 4">
+        </section>
+    </section>
+
+</body>
+</html>

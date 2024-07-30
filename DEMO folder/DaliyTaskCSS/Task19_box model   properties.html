@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Example with Margin, Padding, and Border</title>
+    <style>
+        body {
+            margin: 0; 
+            font-family: Arial, sans-serif; 
+            background-color: #f0f0f0; 
+        }
+
+        .container {
+            padding: 20px; 
+            background-color: #ffffff; 
+        }
+
+        .section {
+            margin-bottom: 20px; 
+            padding: 10px; 
+            border: 2px solid #000; 
+        }
+
+        .margin-example {
+            background-color: lightcoral; 
+            margin: 30px 0; 
+        }
+
+        .padding-example {
+            background-color: lightseagreen; 
+            padding: 30px; 
+        }
+
+        .border-example {
+            background-color: lightblue; 
+            border: 5px dashed #333; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section margin-example">
+            <h2>Margin Example</h2>
+            <p>This section demonstrates the use of margin. Notice the space around the element that separates it from other elements.</p>
+        </div>
+        <div class="section padding-example">
+            <h2>Padding Example</h2>
+            <p>This section demonstrates the use of padding. Notice the space between the text and the border of the element.</p>
+        </div>
+        <div class="section border-example">
+            <h2>Border Example</h2>
+            <p>This section demonstrates the use of border. Notice the dashed border surrounding the element.</p>
+        </div>
+    </div>
+</body>
+</html>

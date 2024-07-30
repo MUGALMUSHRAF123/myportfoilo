@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a web page using margin properties</title>
+    
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.container {
+    margin: 20px auto;
+    width: 60%;
+    overflow: auto;
+}
+
+.box {
+    width: 45%;
+    padding: 20px;
+    margin: 10px;
+    background-color: #e3e3e3;
+    border: 1px solid #ccc;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.box img {
+    width: 200px;
+    height: 300px;
+}
+
+.margin-all img {
+    margin: 20px;
+}
+
+.margin-vertical-horizontal img {
+    margin: 20px 10px; 
+}
+
+.margin-individual img {
+    margin: 10px 20px 30px 40px; 
+}
+
+.margin-auto img {
+    display: block;
+    margin: auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Create a web page using margin properties</h1>
+    </header>
+    <div class="container">
+        <div class="box margin-all">
+            <h2>Margin: All Sides</h2>
+            <img src="photos/image1.jpg" alt="Placeholder Image 1">
+            <p>This image has equal margins on all sides.</p>
+        </div>
+        <div class="box margin-vertical-horizontal">
+            <h2>Margin: Vertical and Horizontal</h2>
+            <img src="photos/image2.jpg" alt="Placeholder Image 2">
+            <p>This image has different vertical and horizontal margins.</p>
+        </div>
+        <div class="box margin-individual">
+            <h2>Margin: Individual Sides</h2>
+            <img src="photos/image3.jpg" alt="Placeholder Image 3">
+            <p>This image has individual margins for top, right, bottom, and left sides.</p>
+        </div>
+        <div class="box margin-auto">
+            <h2>Margin: Auto</h2>
+            <img src="photos/image4.jpg" alt="Placeholder Image 4">
+            <p>This image is centered using auto margins.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

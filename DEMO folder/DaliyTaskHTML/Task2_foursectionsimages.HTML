@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a four sections images in square type is must be in two top side and two down side </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 3fr);
+            gap: 10px;
+        }
+
+        .square {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .square img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        center {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center style="font-size: 20px;">Create a four sections images in square type is must be in two top side and two down side</center>
+
+    <div class="container">
+        <div class="square">
+            <img src="https://cdn.pixabay.com/photo/2021/09/13/08/16/purple-flower-6620617_640.jpg" alt="Image 1">
+        </div>
+        <div class="square">
+            <img src="https://cdn.pixabay.com/photo/2024/05/15/07/59/flowers-8763039_640.jpg" alt="Image 2">
+        </div>
+        <div class="square">
+            <img src="https://cdn.pixabay.com/photo/2023/04/27/14/27/butterfly-7954767_640.jpg" alt="Image 3">
+        </div>
+        <div class="square">
+            <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_640.jpg" alt="Image 4">
+        </div>
+    </div>
+</body>
+</html>
